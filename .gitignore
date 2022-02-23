@@ -388,4 +388,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 # App Settings
-NotifyBot/appsettings.json
+Discordbot/settings.js

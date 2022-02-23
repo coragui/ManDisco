@@ -8,6 +8,8 @@ const prefix = '!';
 
 const fs = require('fs');
 
+const settings = require('./settings.js');
+
 client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -44,4 +46,4 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login('OTQ1NDM4Mjg3MDAxMTc4MTIy.YhQKBQ._NPxZLc8ED1NTkmkbZSLM0ZY9H4');
+client.login(settings.exportToken);
